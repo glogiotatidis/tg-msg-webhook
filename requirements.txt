@@ -1,0 +1,4 @@
+python-decouple
+python-telegram-bot
+sentry-sdk==0.4.3
+requests
