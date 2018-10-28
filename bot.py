@@ -50,7 +50,7 @@ def msg(bot, update):
         if match:
             requests.post(config.HANDLER, json=match.groupdict())
         else:
-            requests.post(config.HANDLER, data=update.message.text)
+            requests.post(config.HANDLER, data=update.message.text.encode('utf-8'))
 
 
 def ping(bot, update):
